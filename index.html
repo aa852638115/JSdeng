@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+
+    <!-- font -->
+    <!-- <link rel="stylesheet" href="font/font_966842_vl4k2l2jmh/iconfont.css"> -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1060008_vim0jkx8u4p.css">
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- layui -->
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="layui/layui.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/commonality.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <!-- js -->
+    <script src="js/commonality.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="layui-header">
+        <!-- 登录窗口 -->
+        <div class="user_operation">
+            <div class="layui-main">
+                您好，欢迎光临！
+                <a href="login.html">请登录</a>
+                <a href="reg.html">免费注册</a>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="layui-main layui-row">
+                <a href="index.html" class="layui-col-md3">
+                    <img src="images/logo.jpg" alt="滴咚商城">
+                </a>
+                <!-- 搜索 -->
+                <form action="" class="layui-form layui-col-md4 layui-col-md-offset5">
+                    <div class="input_search">
+                        <input type="text" placeholder="请输入关键词搜索" name="keywordSearch" autocomplete="off" value="">
+                        <button class="layui-btn layui-btn-shop layui-bg-red" lay-submit lay-filter="formAntistop">
+                            <i class="layui-icon layui-icon-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="all_nav">
+            <div class="layui-main">
+                <ul class="layui-nav" lay-filter="">
+                    <li class="layui-nav-item layui-bg-red">
+                        <a href="" id="allCommodity">
+                            全部商品分类
+                            <i class="iconfont iconliebiao"></i>
+                        </a>
+                    </li>
+                    <li class="layui-nav-item  layui-this">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="">灯饰智能</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="">线下体验店</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="">配灯宝</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="">品牌街</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="">团购专区</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="">特卖专区<span class="layui-badge-dot"></span></a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="">设计师品牌馆</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="index_nav">
+            <!-- 侧边栏 -->
+            <div class="index_smenu">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="iconfont iconpinpai"></i>
+                            <i class="layui-icon layui-icon-right"></i>
+                            品牌
+                        </a>
+                        <div class="submenu">
+                            <dl class="classify">
+                                <dd class="cur">全部品牌</dd>
+                                <dd>A</dd>
+                                <dd>B</dd>
+                                <dd>C</dd>
+                                <dd>D</dd>
+                                <dd>F</dd>
+                                <dd>G</dd>
+                                <dd>H</dd>
+                                <dd>J</dd>
+                                <dd>K</dd>
+                                <dd>L</dd>
+                                <dd>M</dd>
+                                <dd>N</dd>
+                                <dd>O</dd>
+                                <dd>P</dd>
+                                <dd>Q</dd>
+                                <dd>S</dd>
+                                <dd>T</dd>
+                                <dd>W</dd>
+                                <dd>X</dd>
+                                <dd>Y</dd>
+                                <dd>Z</dd>
+                                <dd>1</dd>
+                                <dt>
+                                    <form action="" class="layui-form">
+                                        <div class="submenu_search">
+                                            <input type="text" placeholder="请输入品牌名称搜索" name="SearchBrands" autocomplete="off"
+                                                value="">
+                                            <button class="layui-btn layui-btn-shop layui-bg-red" lay-submit lay-filter="formBrand">
+                                                <i class="layui-icon layui-icon-search"></i></button>
+                                        </div>
+                                    </form>
+                                </dt>
+                            </dl>
+                            <ul class="brand">
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/A_brand0.png" alt="爱维加">
+                                        <div class="c_hover">
+                                            <p class="title">爱维加</p>
+                                            <p title="蜡烛水晶灯、欧式吸顶灯">蜡烛水晶灯、欧式吸顶灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/A_brand1.png" alt="奥丹尼">
+                                        <div class="c_hover">
+                                            <p class="title">奥丹尼</p>
+                                            <p title="欧式吊灯">欧式吊灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/B_brand0.png" alt="倍豪">
+                                        <div class="c_hover">
+                                            <p class="title">倍豪</p>
+                                            <p title="现代简约照明">现代简约照明</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/C_brand0.png" alt="春色辉映">
+                                        <div class="c_hover">
+                                            <p class="title">春色辉映</p>
+                                            <p title="铁艺、小美式、美式、新中式">铁艺、小美式、美式、新中式</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/D_brand0.png" alt="帝盟">
+                                        <div class="c_hover">
+                                            <p class="title">帝盟</p>
+                                            <p title="现代水晶灯">现代水晶灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/F_brand0.png" alt="方亿">
+                                        <div class="c_hover">
+                                            <p class="title">方亿</p>
+                                            <p title="欧美式">欧美式</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/G_brand0.png" alt="光点子">
+                                        <div class="c_hover">
+                                            <p class="title">光点子</p>
+                                            <p title="光源球泡">光源球泡</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/H_brand0.png" alt="浩泉">
+                                        <div class="c_hover">
+                                            <p class="title">浩泉</p>
+                                            <p title="欧式、美式、简约">欧式、美式、简约</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/J_brand0.png" alt="钜邦">
+                                        <div class="c_hover">
+                                            <p class="title">钜邦</p>
+                                            <p title="美式吊灯">美式吊灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/K_brand0.png" alt="柯梵">
+                                        <div class="c_hover">
+                                            <p class="title">柯梵</p>
+                                            <p title="铜灯">铜灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/L_brand0.png" alt="丽爵">
+                                        <div class="c_hover">
+                                            <p class="title">丽爵</p>
+                                            <p title="新工业风、美式">新工业风、美式</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/M_brand0.png" alt="弥渲">
+                                        <div class="c_hover">
+                                            <p class="title">弥渲</p>
+                                            <p title="照明">照明</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/N_brand0.png" alt="诺金顿">
+                                        <div class="c_hover">
+                                            <p class="title">诺金顿</p>
+                                            <p title="现代水晶灯">现代水晶灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/O_brand0.png" alt="欧莱美特">
+                                        <div class="c_hover">
+                                            <p class="title">欧莱美特</p>
+                                            <p title="简约现代灯">简约现代灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/P_brand0.png" alt="普省">
+                                        <div class="c_hover">
+                                            <p class="title">普省</p>
+                                            <p title="现代简约灯">现代简约灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/Q_brand0.png" alt="琪臻">
+                                        <div class="c_hover">
+                                            <p class="title">琪臻</p>
+                                            <p title="欧式水晶灯">欧式水晶灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/S_brand0.png" alt="胜腾">
+                                        <div class="c_hover">
+                                            <p class="title">胜腾</p>
+                                            <p title="欧式">欧式</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/T_brand0.png" alt="铜灯多">
+                                        <div class="c_hover">
+                                            <p class="title">铜灯多</p>
+                                            <p title="现代、简约风">现代、简约风</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/W&V_brand0.png" alt="沃沃灯饰">
+                                        <div class="c_hover">
+                                            <p class="title">沃沃灯饰</p>
+                                            <p title="美式灯">美式灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/X_brand0.png" alt="新华">
+                                        <div class="c_hover">
+                                            <p class="title">新华</p>
+                                            <p title="欧式">欧式</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/Y_brand0.png" alt="伊诺朗德">
+                                        <div class="c_hover">
+                                            <p class="title">伊诺朗德</p>
+                                            <p title="欧美式，简约风">欧美式，简约风</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/Z_brand0.png" alt="宙斯">
+                                        <div class="c_hover">
+                                            <p class="title">宙斯</p>
+                                            <p title="欧式树脂灯">欧式树脂灯</p>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/brand/Numb_brand0.png" alt="121灯饰">
+                                        <div class="c_hover">
+                                            <p class="title">121灯饰</p>
+                                            <p title="现代吸顶灯">现代吸顶灯</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="iconfont iconhekricondengyedengmoshi"></i>
+                            <i class="layui-icon layui-icon-right"></i>
+                            类别
+                        </a>
+                        <div class="submenu sub_list">
+                            <a href="">吊灯</a>
+                            <a href="">吸顶灯</a>
+                            <a href="">白灯</a>
+                            <a href="">壁灯</a>
+                            <a href="">户外灯</a>
+                            <a href="">光源</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="iconfont iconfengge"></i>
+                            <i class="layui-icon layui-icon-right"></i>
+                            风格
+                        </a>
+                        <div class="submenu sub_list">
+                            <a href="">现代简约</a>
+                            <a href="">欧式</a>
+                            <a href="">美式简约</a>
+                            <a href="">中式</a>
+                            <a href="">新中式</a>
+                            <a href="">后现代</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="iconfont iconzhuti_tiaosepan_o"></i>
+                            <i class="layui-icon layui-icon-right"></i>
+                            材质
+                        </a>
+                        <div class="submenu sub_list">
+                            <a href="">瓦棱纸</a>
+                            <a href="">铁艺</a>
+                            <a href="">玻璃</a>
+                            <a href="">水晶</a>
+                            <a href="">铜</a>
+                            <a href="">锌合金</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="iconfont iconproject_space"></i>
+                            <i class="layui-icon layui-icon-right"></i>
+                            空间
+                        </a>
+                        <div class="submenu sub_list">
+                            <a href="">客厅</a>
+                            <a href="">书房/卧室</a>
+                            <a href="">餐厅</a>
+                            <a href="">走廊/过道/玄关</a>
+                            <a href="">阳台</a>
+                            <a href="">厨房</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="iconfont iconjiagechaxun"></i>
+                            <i class="layui-icon layui-icon-right"></i>
+                            价格
+                        </a>
+                        <div class="submenu sub_list ">
+                            <a href="">500-1000</a>
+                            <a href="">1000-2000</a>
+                            <a href="">2000-4000</a>
+                            <a href="">4000-6000</a>
+                            <a href="">6000-8000</a>
+                            <a href="">8000-10000</a>
+                            <hr>
+                            <div class="layui-form-item price">
+                                <form action="" class="layui-form">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">自定义范围</label>
+                                        <div class="layui-input-inline" style="width: 100px;">
+                                            <input type="text" name="price_min" lay-verify="number" placeholder="￥"
+                                                autocomplete="off" class="layui-input">
+                                        </div>
+                                        <div class="layui-form-mid">-</div>
+                                        <div class="layui-input-inline" style="width: 100px;">
+                                            <input type="text" name="price_max" lay-verify="number" placeholder="￥"
+                                                autocomplete="off" class="layui-input">
+                                        </div>
+                                        <button class="layui-btn layui-btn-shop layui-bg-red" lay-submit lay-filter="formScope">确定</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 轮播图 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/banner/index_banner0.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner/index_banner1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner/index_banner2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner/index_banner3.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner/index_banner4.jpg">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+
+            <!-- 体验馆 -->
+            <div class="index_exploration">
+                <div class="localTop">
+                    当前城市：
+                    <span class="indexpavdqcs">中山市</span>
+                    <div class="tyTitle">
+                        <span class="tyName">选择体验馆</span>
+                        <i class="layui-icon layui-icon-down"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <a href="">广东省中山市古镇镇灯网旗舰店</a>
+                    <img src="images/recommend-ic.png" class="Recommend">
+                    <a href=""><img src="images/inshowpavimg.jpg" alt=""></a>
+                    <ul>
+                        <li>电话：<span>12380552614</span></li>
+                        <li>营业：<span>08:00~18:00</span></li>
+                        <li>面积：<span>3000㎡</span></li>
+                        <li>地址：<span>广东省中山市古镇镇中兴大道121号</span></li>
+                        <!-- 发送地址 -->
+                        <!-- <li><button class="WindowBut">免费发送地址到手机</button></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <a class="Ads" href="">
+                <img src="images/AdsAPI_0.jpg" alt="广告——火热招商">
+            </a>
+            <ul class="floor1_part">
+                <li class="blogroll">
+                    <a href="">
+                        <img src="images/AdsAPI_1.jpg" alt="特卖专区">
+                    </a>
+                </li>
+                <li class="blogroll">
+                    <a href="">
+                        <img src="images/AdsAPI_2.jpg" alt="团购专区">
+                    </a>
+                </li>
+                <li class="blogroll">
+                    <a href="">
+                        <img src="images/AdsAPI_3.jpg" alt="配灯宝">
+                    </a>
+                </li>
+                <li class="blogroll">
+                    <a href="">
+                        <img src="images/AdsAPI_4.jpg" alt="品牌街">
+                    </a>
+                </li>
+                <li class="Hot">
+                    <a href="">
+                        <img src="images/light/light_0.png" alt="">
+                        <h3>本周热卖商品</h3>
+                        <p>大牌热品 供不应求</p>
+                        <button>
+                            Go
+                            <i class="layui-icon layui-icon-right"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="Hot">
+                    <a href="">
+                        <img src="images/light/light_1.png" alt="">
+                        <h3>本周新上线商品</h3>
+                        <p>靓屋装饰 新品首选</p>
+                        <button>
+                            Go
+                            <i class="layui-icon layui-icon-right"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="Hot">
+                    <a href="">
+                        <img src="images/light/light_2.png" alt="">
+                        <h3>本周人气商品</h3>
+                        <p>人气爆棚 每周更新</p>
+                        <button>
+                            Go
+                            <i class="layui-icon layui-icon-right"></i>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="floor2_part">
+                <h3><span>GROUP PURCHASE </span></h3>
+                <a href=""><i class="layui-icon layui-icon-right"></i></a>
+
+                <ul class="index_groupListTab-head">
+                    <li>
+                        正在进行第<span>1</span>期
+                        <div id="inTime"></div>
+                    </li>
+                    <li>
+                        下期预告：
+                        <div id="endTime"></div>
+                        第<span>1</span>期
+                        <div id="getEndTime"></div>
+                    </li>
+                </ul>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 底部 -->
+    <div class="layui-footer">
+        <div class="hint_footer">
+            <div class="layui-main">
+                <div class="layui-row layui-col-space30">
+                    <div class="layui-col-md3">
+                        <a href="index.html"><img src="" alt=""></a>
+                        <i class="layui-icon layui-icon-login-qq"></i>
+                        <i class="layui-icon layui-icon-login-wechat"></i>
+                        <p>
+                            <br>
+                            注册声明 版权声明
+                        </p>
+                    </div>
+                    <div class="layui-col-md3">
+                        <h3>学院地址：</h3>
+                        <p>
+                            中山市技师学院<br>
+                            计算机应用系： 中山市东区兴文路72号
+                        </p>
+                    </div>
+                    <div class="layui-col-md3">
+                        <h3>友情链接：</h3>
+                        <a href="">智慧课堂</a>
+                        <a href="">技智邦</a>
+                        <a href="">急聘网</a>
+                        <a href="">语文应用资料库</a>
+                    </div>
+                    <div class="layui-col-md3">
+                        <h3>站点登录：</h3>
+                        <a href="login.html">教师入口</a>
+                        <a href="login.html">管理员入口</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ba_footer">
+            Copyright 中山市技师学院 粤ICP备14098101号
+        </div>
+    </div>
+</body>
+
+</html>

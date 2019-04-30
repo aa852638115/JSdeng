@@ -1,0 +1,359 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F2F2F2;
+}
+
+ul,
+li,
+div,
+a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto 60px;
+    padding: 10px 0;
+}
+
+.index_nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index_nav>* {
+    margin: 0;
+    padding: 0;
+}
+
+.index_smenu {
+    width: 232px;
+}
+
+.index_smenu>ul {
+    background: #6d4c41;
+    position: relative;
+
+}
+
+.index_smenu>ul>li {
+    line-height: 20px;
+}
+
+.index_smenu>ul>li>a:hover {
+    color: #ff5722;
+    background: #fff;
+}
+
+.index_smenu>ul>li>a {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    padding: 24px;
+}
+
+.index_smenu>ul>li>a i {
+    font-size: 20px;
+}
+
+.index_smenu>ul>li>a .layui-icon-right {
+    float: right;
+}
+
+/* 控制li的显示 */
+.index_smenu>ul>li:nth-of-type(6)>div {
+    /* display: block; */
+}
+
+/* 侧边栏通用样式 */
+.index_smenu>ul>li>div {
+    position: absolute;
+    display: none;
+    left: 231px;
+    padding: 16px 10px;
+    top: 0;
+    width: 868px;
+    height: 420px;
+    z-index: 1999;
+    background: #fff;
+}
+
+/* 侧边栏1 */
+.index_smenu>ul>li>div dl.classify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.classify dt {
+    margin: -4px 10px 0;
+
+}
+
+.submenu_search button {
+    transform: scale(0.6);
+}
+
+.submenu_search input[type="text"] {
+    vertical-align: middle;
+    width: 128px;
+    height: 22px;
+    outline: none;
+    padding-left: 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    font-size: 12px;
+    margin-right: -20px;
+    border: 1px solid #ccc;
+    color: #6c6c6c;
+}
+
+.classify dd {
+    float: left;
+    padding: 6px;
+    cursor: pointer;
+    color: #666;
+}
+
+.classify dd:hover,
+.classify dd.cur {
+    background: #ff5722;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.index_smenu>ul>li>div ul.brand {
+    overflow-y: scroll;
+    margin: 6px 0 0;
+    height: 344px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand li {
+    border: 1px solid #ccc;
+    padding: 15px 20px 16px;
+    position: relative;
+}
+
+.brand li a>img {
+    width: 123px;
+    height: 45px;
+}
+
+/* 控制品牌触摸显示 */
+.brand li:first-child a>div.c_hover {
+    /* display: block; */
+}
+
+.brand li a>div.c_hover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    left: 0;
+    height: 100%;
+    padding: 20px 10px 0;
+    background: rgba(41, 13, 2, 0.8);
+}
+
+.c_hover p {
+    overflow: hidden;
+    height: 20px;
+    color: #fff;
+}
+
+.c_hover p.title {
+    color: #ff5722;
+}
+
+/* 侧边栏2 */
+.index_smenu>ul>li>div.sub_list {
+    overflow-y: auto;
+}
+
+.sub_list>a {
+    padding: 6px 6px 10px;
+    width: 160px;
+    text-align: center;
+    float: left;
+    color: #666;
+}
+
+.sub_list>a:hover {
+    color: #ff5722;
+}
+
+.sub_list .price {
+    transform: scale(0.8);
+    text-align: center;
+}
+
+.price label.layui-form-label {
+    width: 110px;
+    display: block;
+}
+
+.price button.layui-btn-primary:hover {
+    border: 1px solid #ff5722;
+}
+
+/* 轮播图 */
+.swiper-container {
+    width: 636px;
+    height: 420px;
+}
+/* .swiper-button-next,.swiper-button-prev{
+    color:#eee; 
+} */
+
+.swiper-slide img {
+    height: 420px;
+}
+
+/* 体验馆 */
+.index_exploration {
+    width: 232px;
+    background: #fff;
+}
+
+.index_exploration .localTop {
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    font-size: 12px;
+}
+
+.localTop .indexpavdqcs {
+    color: #f22e00;
+    margin: 0 -4px;
+}
+
+.localTop .tyTitle {
+    margin: -2px 0 0;
+    cursor: pointer;
+    float: right;
+    color: #f22e00;
+    border: 1px solid #f22e00;
+    border-radius: 4px;
+    text-align: center;
+    padding: 2px;
+}
+
+.tyTitle i {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.index_exploration .main {
+    padding: 10px 16px 16px;
+    position: relative;
+}
+
+.main a:first-of-type {
+    color: #333;
+    width: 180px;
+    display: inline-block;
+    margin: 6px 0;
+    text-align: center;
+
+}
+
+.main a:first-of-type:hover {
+    color: #ff2222;
+}
+
+.main img.Recommend {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main a:nth-of-type(2) img {
+    height: 150px;
+}
+
+.main ul {
+    padding: 6px 0;
+}
+
+.main ul li {
+    padding: 6px 0;
+
+}
+
+.main ul li span {
+    display: inline-block;
+    width: 140px;
+    vertical-align: top;
+}
+
+.content {
+    margin: 10px 0;
+
+}
+
+.content a.Ads {
+    float: left;
+    margin-right: 10px;
+}
+
+
+.floor1_part {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 310px;
+}
+
+
+.floor1_part li.blogroll {
+    width: 208px;
+    margin: 0 0 10px;
+}
+
+
+
+.floor1_part li.Hot {
+    width: 280px;
+    background: #fff;
+    height: 140px;
+    padding: 20px 10px;
+}
+
+.floor1_part li.Hot a img {
+    float: right;
+
+}
+
+.floor1_part li.Hot a h3 {
+    font-size: 18px;
+}
+
+.floor1_part li.Hot a p {
+    color: #ff5722;
+    font-size: 14px;
+    line-height: 3rem;
+}
+
+.floor1_part li.Hot a button {
+    margin: 20px 0 0;
+    padding: 4px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 4px;
+    transform: scale(0.9)
+}
+
+.floor1_part li.Hot a button:hover {
+    color: #ff5722;
+    border: 1px solid #ff5722;
+}
+
+.floor1_part li.Hot a button i {
+    vertical-align: middle;
+}

@@ -1,0 +1,153 @@
+/*通用样式*/
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body,
+header,
+footer,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+br,
+p,
+span,
+strong,
+pre,
+i,
+b,
+a,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+img,
+nav,
+input,
+button {
+    margin: 0;
+    padding: 0
+}
+
+body,
+header,
+footer,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+br,
+p,
+span,
+strong,
+pre,
+i,
+b,
+a,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+input,
+button {
+    /* font: 12px "微软雅黑"; */
+    font-family: "微软雅黑", "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+
+}
+
+body {
+    /* font-size: 12px; */
+    letter-spacing: 1px;
+    position: relative;
+}
+
+a,
+a:hover {
+    color: #000;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none
+}
+
+
+input,
+textarea {
+    outline: none;
+}
+
+/*下拉列表框的小三角*/
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
